@@ -1,4 +1,4 @@
-# mongo-to-csv
+# mongo-to-csv [![Build Status](https://travis-ci.org/yasharma/mongo-to-csv.svg?branch=master)](https://travis-ci.org/yasharma/mongo-to-csv)
 Export the mongodb collection to csv using mongoexport and nodejs
 
 ## Usage
