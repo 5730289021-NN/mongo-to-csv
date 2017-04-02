@@ -105,6 +105,8 @@ describe('mongotocsv', function(){
 
 	it('it should pass with all the required options', function(done){
 		mongotocsv.export(options, function (err, result) {
+			console.log(err);
+			console.log(result);
 			assert.deepEqual(err, null);
 			done()
 		});
