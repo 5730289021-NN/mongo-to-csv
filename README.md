@@ -2,8 +2,12 @@
 Export the mongodb collection to csv using mongoexport and nodejs
 
 ## Usage
+```bash
+1. $ npm install mongo-to-csv --save
+```
 ```javascript
-const mongotocsv = require('mongotocsv');
+'use strict';
+const mongotocsv = require('mongo-to-csv');
 let options = {
 	database: 'users', // required
 	collection: 'pets', // required
