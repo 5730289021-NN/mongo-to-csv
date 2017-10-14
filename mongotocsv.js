@@ -53,6 +53,22 @@ function mongotocsv(options, callback) {
 	coll 	= `-c ${options.collection}`,
 	fields 	= `-f ${options.fields.join(',')}`,
 	out 	= `-o ${options.output}`;
+	if( options.hasOwnProperty('hostname') ){
+		arr.push(`-h ${options.hostname}`);
+	}
+	if( options.hasOwnProperty('port') ){
+		arr.push(`--port ${options.port}`);
+	}
+	if( options.hasOwnProperty('username') ){
+		arr.push(`-u ${options.username}`);
+	}
+	if( options.hasOwnProperty('password') ){
+		arr.push(`-p ${options.password}`);
+	}
+	if( options.hasOwnProperty('query') ){
+		arr.push(`--query ${options.query}`);
+	}
+	
 	if( options.hasOwnProperty('allValidOptions') ){
 		arr.push(options.allValidOptions);
 	}
